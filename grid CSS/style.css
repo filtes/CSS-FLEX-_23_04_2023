@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin:10px;
+}
+
+.contenedor{
+    height: auto;
+    width: 100%;
+    background-color: coral;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center; */
+    display: grid;
+    gap: 2rem;
+    /* Para que NO queden elementos vacíos  grid-auto-flow: dense*/
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+
+/* auto-fill: NO llena todos los espacios del ancho de la columna, si estos son mas pequeños que la ventana no los llena, quedarían espacios */
+    /* grid-template-columns: repeat(auto-fill,minmax(15rem, 1fr)); */
+
+/* auto-fit: SI llena todos los espacios del ancho de la columna, si estos son mas pequeños que la ventana no los llena, quedarían espacios */
+grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
+
+/* auto-fit: SI llena todos los espacios del minimo ancho de la columna */
+/* grid-template-columns: repeat(auto-fill,minmax(min(100%,25rem), 1fr)); */
+
+
+}
+
+.items1{
+    background-color: darkcyan;
+    /* height: 600px; */
+}
+
+.items2{
+    background-color: darkolivegreen;
+    /* height: 250px; */
+}
+.items3{
+    background-color: rgb(150, 5, 118);
+    /* height: 700px; */
+}
+
+.items4{
+    background-color: rgb(148, 226, 13);
+    /* height: 200px; */
+}
+
